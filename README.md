@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+Our Hospital React Website
+Welcome to the Our Hospital React website! This project aims to provide a user-friendly interface for patients, doctors, and administrators to interact with the hospital's services. It includes various components such as a navbar, home page, footer, contact us, about us, doctor, patient, admin, login, and signup.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Prerequisites
+To run this project locally, you need to have the following installed on your machine:
 
-## Available Scripts
+Node.js
+NPM (Node Package Manager)
+Getting Started
+Clone the repository:
 
-In the project directory, you can run:
+bash
+Copy code
+git clone https://github.com/your-username/our-hospital.git
+Navigate to the project directory:
 
-### `npm start`
+bash
+Copy code
+cd our-hospital
+Install the dependencies:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+bash
+Copy code
+npm install
+Start the development server:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+bash
+Copy code
+npm start
+The website should now be accessible at http://localhost:3000.
 
-### `npm test`
+Project Structure
+The project structure is organized as follows:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+css
+Copy code
+our-hospital/
+  src/
+    components/
+      Navbar.js
+      Home.js
+      Footer.js
+      ContactUs.js
+      AboutUs.js
+      Doctor.js
+      Patient.js
+      Admin.js
+      Login.js
+      Signup.js
+    services/
+      api.js
+    utils/
+      auth.js
+    App.js
+    index.js
+    ...
+The components directory contains all the React components used in the website.
+The services directory contains the API service file (api.js) responsible for making HTTP requests to the backend.
+The utils directory contains the authentication utility file (auth.js) that handles user authentication and role-based access.
+The App.js file is the entry point of the application, where the routing and main component rendering take place.
+The index.js file is the main JavaScript file that renders the React app.
+User Signup and Login
+When a user signs up using the Signup component, they can select their role as either a doctor or a patient. This data is inserted into the database using an API controller call.
+Upon successful login, a token is generated for the user, which is used for subsequent authentication and role verification.
+The user's role is fetched from the token, and the specific components are displayed accordingly. Users are restricted from accessing components that are not relevant to their role.
+Patient and Doctor Features
+In the Patient component, patients can avail the available services provided by the hospital. They can also schedule appointments with doctors.
+Doctors, represented by the Doctor component, can approve appointments made by patients.
+The Admin role is responsible for activating doctor accounts.
+Please note that this README file provides a general overview of the Our Hospital React website. Detailed information about each component, API endpoints, and database structure can be found in the relevant files within the project.
 
-### `npm run build`
+Feel free to explore the code and make any necessary modifications to suit your specific needs. We hope you find this project helpful and valuable for your hospital website. If you have any questions or need further assistance, please don't hesitate to reach out.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for using Our Hospital React website!
