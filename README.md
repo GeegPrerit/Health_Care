@@ -81,4 +81,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ![Screenshot 2023-07-05 142716](https://github.com/GeegPrerit/Health_Care/assets/127297823/4f01e221-54a3-496d-8922-af71db9c387f)
 
+![image](https://github.com/GeegPrerit/Health_Care/assets/127297823/e4903c3d-69b8-44ae-8c60-4d5599221209)
+
+![image](https://github.com/GeegPrerit/Health_Care/assets/127297823/8fd12461-1d1e-49a4-aa69-412be6f8c811)
+
+![image](https://github.com/GeegPrerit/Health_Care/assets/127297823/e62d3c48-cf98-4a8f-9dc3-baa4fd78cfd1)
+
+
 
