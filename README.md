@@ -1,73 +1,58 @@
-# Getting Started with Create React App
+# Our Hospital React Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a README file for the Our Hospital React website project. The project aims to create a website for a hospital called "Our Hospital" using React. The website includes various components such as a navbar, home, footer, contact us, about us, doctor, patient, admin, login, and signup.
 
-## Available Scripts
+## Project Structure
 
-In the project directory, you can run:
+src/components: Contains the various components used in the website.
+src/api: Includes the API controllers for interacting with the backend.
+src/App.js: The main entry point of the application.
+src/index.js: Renders the root component and mounts it into the DOM
 
-### `npm start`
+### Functionality
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Signup and Login: Users can create an account using the signup component. During signup, users can select their role, either doctor or patient. The user's data is inserted into the database using API controller calls. Users can then log in using their username and password, which generates a token.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Role-Based Access: Upon login, the user's role is fetched from the token. Based on the role, specific components become visible, and the user is restricted from accessing other components. For example, doctors can only access doctor-specific features, and patients can only access patient-specific features.
 
-### `npm test`
+Patient Services: Patients can avail the available services provided by the hospital. They can schedule appointments with doctors.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Appointment Approval: Doctors can approve or reject appointments made by patients.
 
-### `npm run build`
+Admin Role: The admin role is responsible for activating doctor accounts.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Online Active Doctors: The patient component displays a list of online and active doctors available for consultation.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Getting Started
+To run the Our Hospital React website locally, follow these steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Clone the repository:
+git clone https://github.com/your-username/our-hospital.git
 
-### `npm run eject`
+### Install the dependencies:
+cd our-hospital
+npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Configure the backend API:
+Update the API endpoints in the src/api files to point to your backend server.
+Set up the necessary backend endpoints for user authentication, role-based access, patient services, appointment management, and admin functions.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Start the development server:
+npm start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Open your browser and visit http://localhost:3000 to access the Our Hospital React website.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Contributions to the Our Hospital React website project are welcome. If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
 
-### Code Splitting
+### License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This project was developed as a sample website for an imaginary hospital. We acknowledge the efforts of all contributors who made this project possible.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Note: This README file is a template and should be updated with relevant information specific to your Our Hospital React website.
 
 ### Screenshots
 ![Screenshot 2023-07-05 142553](https://github.com/GeegPrerit/Health_Care/assets/127297823/7ef34ee9-4cea-47c1-b6c9-903401aab727)
