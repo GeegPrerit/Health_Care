@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "z3P4AP/BgOQs0GzyQLZZ/q3t8xEtumMgBbXqjAYcOCM=",
+  "Source": "HealthCareBackend",
+  "BasePath": "_content/HealthCareBackend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
